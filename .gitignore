@@ -3,3 +3,8 @@ target/
 dbt_modules/
 logs/
 **/.DS_Store
+
+venv/
+.vscode/
+env.sh
+.user.yml
