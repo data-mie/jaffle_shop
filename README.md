@@ -46,10 +46,10 @@ python3 -m virtualenv venv
 source venv/bin/activate
 ```
 
-4. Install dbt using `pip`:
+4. Install dbt and other dependencies using `pip`:
 
 ```bash
-pip install dbt
+pip install -r requirements.txt
 ```
 
 5. Point dbt to the `jaffle_shop` profile in [profiles.yml](profiles.yml) by setting the following environment variable (you can put this in your `~/.bashrc` so that it gets automatically included in every new terminal session):
@@ -91,7 +91,7 @@ $ dbt test
 $ dbt docs generate
 ```
 
-12. View the documentation for the project:
+12. View the documentation site:
 ```bash
 $ dbt docs serve
 ```
