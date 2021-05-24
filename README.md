@@ -46,7 +46,7 @@ python3 -m virtualenv venv
 source venv/bin/activate
 ```
 
-4. Install dbt and other dependencies using `pip`:
+4. Install dbt and [SQLFluff](#linting-sql) dependencies using `pip`:
 
 ```bash
 pip install -r requirements.txt
@@ -95,6 +95,25 @@ $ dbt docs generate
 ```bash
 $ dbt docs serve
 ```
+
+### Linting SQL
+
+Linters are static code analysis tools used to flag programming errors, stylistic errors and suspicious constructs. [SQLFluff](https://github.com/sqlfluff/sqlfluff) is a SQL linter and it works well with jinja templating and dbt.
+
+Install sqlfluff using pip:
+
+```bash
+pip install sqlfluff
+```
+
+Alternatively, you can run 
+
+```bash
+pip install -r requirements.txt
+``` 
+
+to install `sqlfluff` as it is included in [requirements.txt](requirements.txt).
+
 
 ### What is a jaffle?
 A jaffle is a toasted sandwich with crimped, sealed edges. Invented in Bondi in 1949, the humble jaffle is an Australian classic. The sealed edges allow jaffle-eaters to enjoy liquid fillings inside the sandwich, which reach temperatures close to the core of the earth during cooking. Often consumed at home after a night out, the most classic filling is tinned spaghetti, while my personal favourite is leftover beef stew with melted cheese.
