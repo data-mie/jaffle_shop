@@ -5,15 +5,13 @@ with source as (
   #}
   select
     *
-  from {{ ref('raw_inventory') }}
+  from {{ ref('inventory_snapshot') }}
 ),
 
 renamed as (
   select
     id as inventory_id,
-    sku,
-    inventory_on_hand,
-    date(updated_at) as updated_at
+    *
   from source
 )
 
