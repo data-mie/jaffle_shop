@@ -2,9 +2,9 @@
 
 {{
     config(
-	unique_key='id',
-	strategy='timestamp',
-	updated_at='updated_at',
+        unique_key='id',
+        strategy='timestamp',
+        updated_at='updated_at',
     )
 }}
 
