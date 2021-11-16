@@ -1,0 +1,4 @@
+id,sku,inventory_on_hand,updated_at
+1,INV-001,12,2018-01-01
+2,INV-002,0,2018-01-01
+3,INV-003,5,2018-01-01
