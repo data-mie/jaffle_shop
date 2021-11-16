@@ -13,7 +13,7 @@ renamed as (
     id as inventory_id,
     sku,
     inventory_on_hand,
-    updated_at
+    date(updated_at) as updated_at
   from source
 )
 
