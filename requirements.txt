@@ -1,2 +1,2 @@
-dbt
-sqlfluff
+dbt==0.21.0
+sqlfluff==0.8.1
